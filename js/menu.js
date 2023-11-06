@@ -60,7 +60,7 @@ async function getPersonajesUsuario() {
 
                 const p = document.createElement('p');
                 p.className = 'card-text';
-                p.textContent = character.nombreVestuario;
+                p.textContent = (character.nombreVestuario != "") ? character.nombreVestuario : character.personaje.descripcion;
 
                 cardBody.appendChild(p);
 

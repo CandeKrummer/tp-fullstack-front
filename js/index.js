@@ -49,10 +49,10 @@ async function getUltimos5PersonajesVestidos() {
 
             data.forEach(character => {
                 const col = document.createElement('div');
-                col.className = 'col-md-3';
+                col.className = 'col-md-3 justify-content-center align-items-center';
 
                 const card = document.createElement('div');
-                card.className = 'card';
+                card.className = 'card m-3';
 
                 const imgPersonaje = document.createElement('img');
                 imgPersonaje.className = 'card-img-top img-fluid position-relative';
@@ -79,7 +79,7 @@ async function getUltimos5PersonajesVestidos() {
 
                 const p = document.createElement('p');
                 p.className = 'card-text';
-                p.textContent = character.nombreVestuario;
+                p.textContent = (character.nombreVestuario != "") ? character.nombreVestuario : character.personaje.descripcion;
 
                 cardBody.appendChild(p);
 
