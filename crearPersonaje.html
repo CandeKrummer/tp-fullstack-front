@@ -9,28 +9,32 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container-fluid">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container">
+            <div class="container-fluid">
                 <a class="navbar-brand">Timeless Outfits</a>
             </div>
         </nav>
         <div class="container">
-            <div class="row">
-                <div class="col-6">
+            <div class="row m-3">
+                <div class="col-6 ">
                     <h2>Selecciona el Outfit</h2>
-                    <select id="selectPersonajes" class="form-control" required>
+                    <select id="selectPersonajes" class="form-control m-3" required>
                         <option value="" disabled selected>Selecciona un personaje</option>
                     </select>
-                    <select id="selectTorso" class="form-control" required>
+                    <select id="selectTorso" class="form-control m-3" required>
                         <option value="" disabled selected>Selecciona una remera</option>
                     </select>
-                    <select id="selectPiernas" class="form-control" required>
+                    <select id="selectPiernas" class="form-control m-3" required>
                         <option value="" disabled selected>Selecciona un pantalon</option>
                     </select>
-                    <select id="selectPies" class="form-control" required>
+                    <select id="selectPies" class="form-control m-3" required>
                         <option value="" disabled selected>Selecciona unas zapatillas</option>
                     </select>
+                    <input type="text" id="nombreOutfit" class="form-control m-3" placeholder="Nombre del outfit"
+                        required>
+                    <button id="guardarOutfit" class="btn btn btn-outline-success m-3 align-seft-end">Crear
+                        Outfit</button>
                 </div>
                 <div class="col-6">
                     <div id="contenedorImagenes" class="card">
@@ -40,8 +44,7 @@
                         <img class="card-img-top img-fluid position-absolute top-0 start-0" id="imgTorso" src="">
                         <img class="card-img-top img-fluid position-absolute top-0 start-0" id="imgPersonaje" src="">
                     </div>
-                    <input type="text" id="nombreOutfit" class="form-control" placeholder="Nombre del outfit" required>
-                    <button id="guardarOutfit" class="btn btn-primary">Crear Outfit</button>
+
                 </div>
             </div>
         </div>
